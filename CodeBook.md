@@ -1,6 +1,6 @@
 # DATA DICTIONARY
 
-## UCI_mean_std.csv
+## UCI_mean_std.txt
 
 ### Description
 
@@ -13,7 +13,7 @@ Dataset with the mean and standard deviation from the measures and their activit
 -   activity: measure activity. NUMERIC
 -   subject: measure subject. NUMERIC
 
-## UCI_mean_std_groupby.csv
+## UCI_mean_std_groupby.txt
 
 ### Description
 
