@@ -3,6 +3,7 @@
 ## Description
 
 Repository with a script to clean the data from <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>.
+To clean the data execute the script run_analysis.R
 
 ## Datasets
 

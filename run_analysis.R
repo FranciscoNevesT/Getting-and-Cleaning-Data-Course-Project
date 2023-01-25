@@ -64,9 +64,9 @@ train_set <- read_data("UCI HAR Dataset/train/X_train.txt",
 
 dataset <- compute_mean_sd(rbind(train_set,test_set))
 
-write.csv(dataset, "UCI_mean_std.csv")
+write.csv(dataset, "UCI_mean_std.csv", row.names = FALSE)
 
 groupby_dataset <- dataset %>% group_by(activity,subject) %>% summarise(mean = mean(mean),
                                                    sd = sd(sd))
 
-write.csv(dataset, "UCI_mean_std_groupby.csv")
+write.csv(dataset, "UCI_mean_std_groupby.csv", row.names = FALSE)
