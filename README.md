@@ -1,13 +1,19 @@
 # Getting-and-Cleaning-Data-Course-Project
 
-## Description
+## Overview
 
-Repository with a script to clean the data from <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>.
-To clean the data execute the script run_analysis.R
+This repository contains a script for cleaning and transforming data from the Human Activity Recognition Using Smartphones dataset.
 
-## Datasets
+## Script Usage
 
--   UCI_mean_std: Dataset with the mean and standard deviation from the measures and their activity and subject. Contains data from both the train and test measures.
+The scrip run_analysis.R cleans the data and follow this steps:
 
--   UCI_mean_std_groupby: Dataset with the data from UCI_mean_std grououp by the activity and subject. The metric used in the summarise
-was the mean from the data.
+1.  Download and unzip the data from <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
+
+2.  Reads and formats the training and test datasets.
+
+3.  Groups the resulting dataset by activity and subject, and calculates the mean of each column.
+
+4.  Saves the processed dataset to a file named UCI_mean_std_groupby.txt.
+
+5.  Creates a Code book that describes the variables in the processed dataset.
